@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  padding: 6px;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.front-products img {
+  width: 100%;
+}
+
+.center {
+  justify-content: center;
+}
+
+html {
+  background: url("assets/imgs/rinse.svg") right -80px top 112px, url("assets/imgs/rinse-2.svg");
+  background-position: 20px;
+  background-repeat: space;
+}
+
+.sticky {
+  position: fixed;
+}
+
+.top {
+  top: 0;
+  left: 10%;
+  background: white;
+}
+
+.bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer {
+  height: auto;
+  background: #383838;
+  color: lightgray;
+}
+
+.rinse-icon {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: #00b3f7;
+  margin: 0 6px;
+}
+
+.front-products {
+  margin-top: 15%;
+}
+
+.search-row,
+.logo-row,
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-row {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid lightgray;
+  color: gray;
+}
+
+.listen-box {
+  display: flex;
+  background: #50b9b3;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  margin: 3px;
+}
+
+.listen-box > p {
+  margin: 0 200px 0 0;
+}
+
+.logo-row {
+  padding: 14px;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  font-size: 23px;
+  padding: 4px;
+}
+
+.w-80 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
