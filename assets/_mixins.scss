@@ -1,0 +1,14 @@
+@mixin flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin button-properties {
+    height: 50px;
+    padding: 10px;
+    margin: 11px;
+    font-size: $font-size-buttons;
+    color: white;
+    background: $button-blue;
+}
