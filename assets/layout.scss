@@ -1,0 +1,62 @@
+$col: 12;
+$button-blue: #00aef3;
+$button-violet: #8994e3;
+@mixin flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin button-properties {
+    height: 50px;
+    padding: 10px;
+    margin: 11px;
+    font-size: $font-size-buttons;
+    color: white;
+    background: $button-blue;
+}
+
+$font-size-buttons: 13px;
+$breakpoints: ( "large": 1000px, "medium": 750px, "small": 500px);
+@for $i from 1 through $col {
+    .col-size-#{$i} {
+        flex-basis: #{100 * $i / 12}+"%";
+    }
+}
+
+.subscribe-box {
+    @include flex-centered();
+    @include button-properties();
+    border-radius: 4%;
+}
+
+.subscribe-box:last-child {
+    background: $button-violet;
+}
+
+@for $i from 1 through 16 {
+    .artist-info-#{$i} {
+        background-image: url("imgs/artist-info-"+#{$i}+".jpg");
+    }
+}
+
+.artist-box {
+    display: flex;
+    height: 231px;
+    margin: 10px;
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0 0 10px 7px;
+        border-radius: 4%;
+        h2 {
+            text-decoration: underline;
+            font-size: 18px;
+        }
+        span {
+            font-size: 25px;
+        }
+    }
+}
